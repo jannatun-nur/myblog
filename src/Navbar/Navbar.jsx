@@ -1,6 +1,15 @@
+import { Link } from 'react-router-dom';
 import logo from '../../public/b.png'
 
 const Navbar = () => {
+
+    const links = <>
+    <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Paragraph</button></Link>
+    <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Story</button></Link>
+    <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Letter</button></Link>
+    <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Eassy</button></Link>
+    <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Email</button></Link>
+    </>
   return (
     <div>
       <div className="navbar bg-white">
@@ -24,50 +33,18 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {links}
             </ul>
           </div>
-          <img src={logo} alt="" />
+          <img className='lg:h-14 lg:w-16 w-10 h-9' src={logo} alt="" />
+          <p className='text-gray-800 font-serif font-bold'>EduTech</p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            
+                  {links}
           </ul>
         </div>
         {/* <div className="navbar-end">
