@@ -1,4 +1,5 @@
 import image1 from "../../public/imag1 (1).jpg";
+import image2 from "../../public/img2.jpg";
 const Banner = () => {
   return (
     <div>
@@ -31,7 +32,9 @@ const Banner = () => {
 
       <section className="lg:flex lg:justify-evenly lg:mt-10">
         <div className="lg:w-6/12">
-          <p className="text-gray-800 font-serif font-bold lg:text-4xl text-2xl py-4">Story</p>
+          <p className="text-gray-800 font-serif font-bold lg:text-4xl text-2xl py-4">
+            Story
+          </p>
           <p className="text-gray-800 font-serif lg:text-2xl ">
             Stories are fundamental to human communication, allowing us to share
             experiences, imagine different possibilities, and understand complex
@@ -44,7 +47,9 @@ const Banner = () => {
         </div>
 
         <div className="lg:w-5/12">
-          <p className="text-gray-800 font-serif font-bold lg:text-4xl text-2xl py-4">Letter</p>
+          <p className="text-gray-800 font-serif font-bold lg:text-4xl text-2xl py-4">
+            Letter
+          </p>
           <p className="text-gray-800 font-serif lg:text-2xl ">
             A letter is a written form of communication traditionally sent from
             one person to another, conveying messages, information, or
@@ -61,8 +66,28 @@ const Banner = () => {
         </div>
       </section>
 
-
       {/* 03 */}
+      <section className="lg:flex lg:justify-evenly">
+        <div className="lg:w-6/12">
+          <img src={image2} alt="" />
+        </div>
+
+        <div className="lg:w-5/12">
+          <p className="text-gray-800 font-serif font-bold lg:text-4xl text-2xl py-4">
+           Email
+          </p>
+          <p className="text-gray-800 font-serif lg:text-2xl ">
+            Email, short for electronic mail, is a digital form of communication
+            that allows users to send and receive messages over the internet.
+            Emails have become a ubiquitous part of personal and professional
+            communication due to their speed, efficiency, and
+            accessibility.Emails have revolutionized communication by providing
+            a fast, efficient, and versatile way to connect with others. Whether
+            for personal, professional, or official purposes, emails are an
+            essential tool in the modern digital world.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
