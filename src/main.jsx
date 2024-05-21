@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Root from './Root/Root';
 import Home from './Home/Home';
+import Paragraph from './Paragraph/Paragraph';
+import Traffic from './Traffic/Traffic';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+      },
+      {
+        path:'/paragraph',
+        element:<Paragraph/>
+      },
+      {
+        path:'/traffic',
+        element:<Traffic/>
       }
     ]
   },
@@ -23,6 +33,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+  <div className='min-h-screen bg-white'>
+  <RouterProvider router={router} />
+  </div>
   </React.StrictMode>,
 )
