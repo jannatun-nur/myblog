@@ -5,7 +5,7 @@ const Navbar = () => {
 
     const links = <>
     <Link to='/paragraph'><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Paragraph</button></Link>
-    <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Story</button></Link>
+    <Link to='/story'><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Story</button></Link>
     <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Letter</button></Link>
     <Link><button className='lg:px-4 lg:py-1 lg:text-xl text-gray-800 hover:bg-black hover:text-white font-serif rounded-md'>Email</button></Link>
     </>

@@ -8,6 +8,7 @@ import {
 import Root from './Root/Root';
 import Home from './Home/Home';
 import Paragraph from './Paragraph/Paragraph';
+import Story from './Story/Story';
 
 // import Traffic from './Traffic/Traffic';
 
@@ -24,10 +25,11 @@ const router = createBrowserRouter([
         path:'/paragraph',
         element:<Paragraph/>
       },
-      // {
-      //   path:'/traffic',
-      //   element:<Traffic/>
-      // }
+      {
+        path:'/story',
+        element:<Story/>
+      }
+      
     ]
   },
 ]);
