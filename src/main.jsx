@@ -9,6 +9,7 @@ import Root from './Root/Root';
 import Home from './Home/Home';
 import Paragraph from './Paragraph/Paragraph';
 import Story from './Story/Story';
+import Letter from './Letter/Letter';
 
 // import Traffic from './Traffic/Traffic';
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path:'/story',
         element:<Story/>
+      },
+      {
+        path:'/letter',
+        element:<Letter/>
       }
       
     ]
